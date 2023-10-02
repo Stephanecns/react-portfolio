@@ -1,4 +1,4 @@
-import './globals.css';
+import '../app/style/globals.css';
 import Head from 'next/head'; // Ajout de l'importation de Head
 import { Inter } from 'next/font/google';
 

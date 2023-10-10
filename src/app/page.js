@@ -14,7 +14,7 @@ export default function Home() {
     <main className="bg-white px-10 md:px-20 lg:px-20">
       <section className="min-h-screen">
         <nav className="py-10 mb-12 flex justify-between">
-          <h1 className="text-xl">Stéphane</h1>
+          <h1 className="text-xl">Stéphane.dev</h1>
           <ul className="flex items-center">
             <li>
               <a
@@ -84,7 +84,7 @@ export default function Home() {
       </section>
       <section>
         <div className="p-10">
-          <h3 className="text-3xl py-1 text-center">Services proposés</h3>
+          <h3 className="text-3xl py-1 text-center text-teal-800 font-bold ">SERVICES PROPOSÉS</h3>
           <p className="text-sm py-2 leading-8 text-gray-800 text-center">
             À l'ère digitale actuelle, l'apparence et la fonctionnalité d'un
             site web sont primordiales. En tant que développeur front-end, je
@@ -96,7 +96,7 @@ export default function Home() {
           </p>
         </div>
         <div className="lg:flex gap-10">
-          <div className="flex flex-col justify-center items-center text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+          <div className="flex flex-col justify-center items-center text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white hover:shadow-xl transition-shadow duration-300">
             <Image
               src={design}
               alt="Icône de design"
@@ -117,7 +117,7 @@ export default function Home() {
             <p className="text-gray-800 py-1">SASS</p>
           </div>
 
-          <div className="flex flex-col justify-center items-center text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+          <div className="flex flex-col justify-center items-center text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white hover:shadow-xl transition-shadow duration-300">
             <Image
               src={code}
               alt="Icône représentant le développement"
@@ -138,7 +138,7 @@ export default function Home() {
             <p className="text-gray-800 py-1">Chrome DevTools </p>
           </div>
 
-          <div className="flex flex-col justify-center items-center text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+          <div className="flex flex-col justify-center items-center text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white hover:shadow-xl transition-shadow duration-300">
             <Image
               src={consulting}
               alt="Icône de pouce levé symbolisant l'approbation"
@@ -161,7 +161,7 @@ export default function Home() {
       </section>
       <section>
         <div>
-          <h3 className="text-3xl py-1 text-center">Portfolio</h3>
+          <h3 className="text-3xl py-1 text-center text-teal-800 font-bold">PORTFOLIO</h3>
           <p className="text-sm py-2 leading-8 text-gray-800 text-center">
             Derrière chaque projet se cache une histoire d'innovation et de défi
             relevé. Mon portfolio est le témoignage de ce voyage en tant que

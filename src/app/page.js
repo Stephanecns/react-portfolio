@@ -178,15 +178,17 @@ export default function Home() {
               key={index}
               className="flex gap-10 w-full lg:w-1/2 justify-center items-center"
             >
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
               <div className="flex-1 shadow-lg rounded-lg overflow-hidden">
                 <Image
                   src={project.img}
                   alt={project.alt} // Utilisez l'attribut alt de chaque projet
-                  className="rounded-lg object-cover"
+                  className="rounded-lg object-cover cursor-pointer"
                   width={"100%"}
                   height={"100%"}
                 />
               </div>
+              </a>
               <div className="flex-1 shadow-lg p-10 rounded-lg dark:bg-white">
                 <h3 className="text-lg font-medium pb-2">{project.title}</h3>
                 <p>{project.desc}</p>

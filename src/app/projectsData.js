@@ -5,29 +5,34 @@ import port4 from "../../public/port4.png";
 
 const projects = [
   {
+    id: "kasa-project",
     img: port1,
-    desc: "J'ai contribué à la refonte du site web de Kasa, une entreprise de location d'appartements entre particuliers. Mon rôle était de développer le front-end de l'application en utilisant React, en suivant les maquettes Figma et en respectant les bonnes pratiques de codage. J'ai également intégré des animations CSS et configuré la navigation entre les pages avec React Router. Cette expérience a renforcé mes compétences en développement front-end",
-    alt: "Capture d'écran du projet 1",
+    desc: "Refonte du site de Kasa, une plateforme de location. Développement front-end avec React, intégration d'animations CSS et configuration de React Router.",
+    alt: "Capture d'écran du site web de Kasa, une plateforme de location immobilière",
     title: "Plateforme de Location Immobilière",
     link: "https://github.com/Stephanecns/location-app-react.git"
   },
   {
+    id: "argent-bank-project",
     img: port2,
-    desc: "J'ai rejoint Argent Bank en tant que développeur front-end pour créer une application React, gérer l'authentification des utilisateurs et concevoir des routes API pour les transactions. J'ai renforcé mes compétences en développement front-end, en affichage de données depuis le backend via des appels API, en configuration de routes API pour la communication client/serveur, et en implémentation de la gestion des données avec Redux pour garantir le bon fonctionnement de l'interface.",
-    alt: "Capture d'écran du projet 2",
+    desc: "Création d'une application React pour Argent Bank. Gestion de l'authentification des utilisateurs et conception des routes API pour les transactions.",
+    alt: "Capture d'écran de l'application React d'Argent Bank",
     title: "Plateforme pour une Application Bancaire",
     link: "https://github.com/Stephanecns/ArgentBank-website.git"
   },
   {
+    id: "nina-carducci-optimization-project",
     img: port3,
-    desc: "J'ai proposé mes services de développeur web pour optimiser le site web de Nina Carducci en améliorant les performances de chargement, l'accessibilité, et le référencement SEO. J'ai optimisé les images, le code source, et mis en place le référencement local en utilisant Schema.org. Mon travail a permis d'améliorer significativement la visibilité de son site web et d'attirer davantage de visiteurs. Cette expérience m'a permis de renforcer mes compétences en optimisation de la performance d'un site web.",
-    alt: "Capture d'écran du projet 3",
+    desc: "Optimisation du site de Nina Carducci pour améliorer les performances, l'accessibilité et le référencement SEO. Utilisation de Schema.org pour le référencement local.",
+    alt: "Capture d'écran du site web optimisé de Nina Carducci, photographe",
     title: "Optimisation SEO pour un Site de Photographe",
     link: "https://github.com/Stephanecns/ninacarducci.github.io-main.git"
   },
   {
+    id: "booki-agency-homepage-project",
     img: port4,
-    desc: "J'ai contribué au développement de la plateforme Booki en tant que développeur web, travaillant en collaboration avec l'UI designer et la CTO. Mon rôle consistait à transformer les maquettes en code HTML et CSS, en respectant les spécifications techniques. J'ai créé une interface responsive pour les versions desktop, tablette et mobile du site. Cette expérience m'a permis d'améliorer mes compétences en intégration web et de contribuer à un projet concret.",
+    desc: "Développement de la plateforme Booki. Transformation de maquettes en code HTML et CSS pour une interface responsive.",
+    alt: "Capture d'écran de la page d'accueil de Booki, agence de voyage",
     title: "Page d'accueil d'une agence de voyage responsive en HTML & CSS",
     link: "https://github.com/Stephanecns/creez-la-page-daccueil-dune-agence-de-voyage-avec-html-css-.git"
   },

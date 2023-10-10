@@ -1,4 +1,3 @@
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import {
   AiFillGithub,
   AiFillLinkedin,
@@ -17,9 +16,6 @@ export default function Home() {
         <nav className="py-10 mb-12 flex justify-between">
           <h1 className="text-xl">Stéphane</h1>
           <ul className="flex items-center">
-            <li>
-              <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
-            </li>
             <li>
               <a
                 className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 "
@@ -80,7 +76,10 @@ export default function Home() {
         </div>
 
         <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
-          <Image src={profile} alt="Photo de profil" layout="responsive" />
+          <Image
+            src={profile}
+            alt="Photo de profil de Stéphane CINEAS"
+          />
         </div>
       </section>
       <section>
@@ -100,7 +99,7 @@ export default function Home() {
           <div className="flex flex-col justify-center items-center text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
             <Image
               src={design}
-              alt="Photo design"
+              alt="Icône de design"
               width={100}
               height={100}
               className="align-middle"
@@ -121,7 +120,7 @@ export default function Home() {
           <div className="flex flex-col justify-center items-center text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
             <Image
               src={code}
-              alt="Photo d'un logo dièse"
+              alt="Icône représentant le développement"
               width={100}
               height={100}
             />
@@ -142,7 +141,7 @@ export default function Home() {
           <div className="flex flex-col justify-center items-center text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
             <Image
               src={consulting}
-              alt="Photo d'un pouce en l'air"
+              alt="Icône de pouce levé symbolisant l'approbation"
               width={100}
               height={100}
             />
@@ -172,30 +171,30 @@ export default function Home() {
             d'excellence. Plongez dans ces récits et laissez-vous inspirer.
           </p>
         </div>
-        <div className="flex flex-wrap gap-10 py-10 justify-center items-center">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="flex gap-10 w-full lg:w-1/2 justify-center items-center"
-            >
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-              <div className="flex-1 shadow-lg rounded-lg overflow-hidden">
-                <Image
-                  src={project.img}
-                  alt={project.alt} // Utilisez l'attribut alt de chaque projet
-                  className="rounded-lg object-cover cursor-pointer"
-                  width={"100%"}
-                  height={"100%"}
-                />
-              </div>
-              </a>
-              <div className="flex-1 shadow-lg p-10 rounded-lg dark:bg-white">
-                <h3 className="text-lg font-medium pb-2">{project.title}</h3>
-                <p>{project.desc}</p>
-              </div>
-            </div>
-          ))}
+        <div className="flex flex-wrap gap-10 py-10 justify-center items-center w-full">
+  {projects.map((project) => (
+    <div
+      key={project.id}
+      className="flex gap-10 w-full lg:w-1/2 justify-center items-start flex-none"
+    >
+      <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex-1">
+        <div className="h-full shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:scale-105 mt-20">
+          <Image
+            src={project.img}
+            alt={project.alt}
+            className="w-full h-full rounded-lg object-cover cursor-pointer"
+          />
         </div>
+      </a>
+      <div className="flex-1 h-full shadow-lg p-10 rounded-lg dark:bg-white hover:shadow-xl transition-shadow duration-300">
+        <h3 className="text-lg font-medium pb-2">{project.title}</h3>
+        <p>{project.desc}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
+
       </section>
     </main>
   );

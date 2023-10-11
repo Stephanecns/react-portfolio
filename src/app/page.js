@@ -12,7 +12,7 @@ import projects from "../../src/app/projectsData";
 export default function Home() {
   return (
     <main className="bg-white px-10 md:px-20 lg:px-20">
-      <section className="min-h-screen">
+      <section className="mb-20">
         <nav className="py-10 mb-12 flex justify-between">
           <h1 className="text-xl">Stéphane.dev</h1>
           <ul className="flex items-center">
@@ -76,15 +76,14 @@ export default function Home() {
         </div>
 
         <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
-          <Image
-            src={profile}
-            alt="Photo de profil de Stéphane CINEAS"
-          />
+          <Image src={profile} alt="Photo de profil de Stéphane CINEAS" />
         </div>
       </section>
-      <section>
-        <div className="p-10">
-          <h3 className="text-3xl py-1 text-center text-teal-800 font-bold ">SERVICES PROPOSÉS</h3>
+      <section className="mb-20">
+        <div className="pt-10 pl-10 pr-10">
+          <h3 className="text-3xl py-1 text-center text-teal-800 font-bold ">
+            SERVICES PROPOSÉS
+          </h3>
           <p className="text-sm py-2 leading-8 text-gray-800 text-center">
             À l'ère digitale actuelle, l'apparence et la fonctionnalité d'un
             site web sont primordiales. En tant que développeur front-end, je
@@ -161,7 +160,9 @@ export default function Home() {
       </section>
       <section>
         <div>
-          <h3 className="text-3xl py-1 text-center text-teal-800 font-bold">PORTFOLIO</h3>
+          <h3 className="text-3xl py-1 text-center text-teal-800 font-bold">
+            PORTFOLIO
+          </h3>
           <p className="text-sm py-2 leading-8 text-gray-800 text-center">
             Derrière chaque projet se cache une histoire d'innovation et de défi
             relevé. Mon portfolio est le témoignage de ce voyage en tant que
@@ -172,29 +173,32 @@ export default function Home() {
           </p>
         </div>
         <div className="flex flex-wrap gap-10 py-10 justify-center items-center w-full">
-  {projects.map((project) => (
-    <div
-      key={project.id}
-      className="flex gap-10 w-full lg:w-1/2 justify-center items-start flex-none"
-    >
-      <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex-1">
-        <div className="h-full shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:scale-105 mt-20">
-          <Image
-            src={project.img}
-            alt={project.alt}
-            className="w-full h-full rounded-lg object-cover cursor-pointer"
-          />
+          {projects.map((project) => (
+            <div
+              key={project.id}
+              className="flex flex-col md:flex-row gap-4 md:gap-28 w-full justify-center items-center mb-10"
+            >
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full md:flex-1"
+              >
+                <div className="h-full shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                  <Image
+                    src={project.img}
+                    alt={project.alt}
+                    className="w-full h-full rounded-lg object-cover cursor-pointer"
+                  />
+                </div>
+              </a>
+              <div className="w-full md:flex-1 h-full shadow-lg p-10 rounded-lg dark:bg-white hover:shadow-xl transition-shadow duration-300">
+                <h3 className="text-lg font-medium pb-2">{project.title}</h3>
+                <p>{project.desc}</p>
+              </div>
+            </div>
+          ))}
         </div>
-      </a>
-      <div className="flex-1 h-full shadow-lg p-10 rounded-lg dark:bg-white hover:shadow-xl transition-shadow duration-300">
-        <h3 className="text-lg font-medium pb-2">{project.title}</h3>
-        <p>{project.desc}</p>
-      </div>
-    </div>
-  ))}
-</div>
-
-
       </section>
     </main>
   );
